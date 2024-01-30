@@ -13,14 +13,14 @@ function ErrorPage() {
   }
 
   if (error.status === 404) {
-    title= 'Not found'
+    title = 'Not found'
     message = 'Could not find page'
   }
 
   return (
     <>
       <MainNavigation />
-      <PageContent title="An error occurred">
+      <PageContent title={title}>
         <p>{message}</p>
       </PageContent>
     </>
